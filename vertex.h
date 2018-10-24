@@ -54,6 +54,7 @@ class vertex
       }
       edge temp;
       temp.addedge(&curr->data ,&(node->start));
+      temp.addedge(&node->data ,&(curr->start));
   }
   void print(vertex *v)
   {
