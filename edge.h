@@ -8,6 +8,7 @@ class edge
     edge *temp= new edge;
     temp->data = data;
     temp->next=NULL;
+   // temp->flag=0;
     if(*start==NULL)
     {
       *start = temp;
@@ -22,11 +23,16 @@ class edge
       curr->next=temp;
     }
   }
-  void print(edge e)
+/*  void highflag(edge *e)
+  {
+    e->flag=1;
+  }*/
+  /*void print(edge e)
   {
     cout<<" "<<&e.data;
-  }
+  }*/
  // private:
   edge *next;
   int *data;
+ // bool flag;
 };
